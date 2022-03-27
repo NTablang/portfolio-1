@@ -1,0 +1,48 @@
+body {
+    background-color: #4801ff;
+    color: black;
+    font-size: 128px;
+    font-family: sans-serif;
+    padding-right: 10vw;
+}
+@mixin align-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.stage-perspective {
+    overflow-x: hidden;
+    perspective: 300px;
+    .panel-1 {
+        position: relative;
+        transform-style: preserve-3d;
+        transform: perspective(100vw) rotateY(-30deg);
+        transform-origin: right;
+        text-align: right;
+        transition: transform 350ms ease;
+        font-weight: bolder;
+        height: 20vh;
+        .content {
+            position: absolute;
+            inset: 0;
+            @include align-center;
+        }
+
+    }
+}
+
+.panel-1:hover {
+    transition: transform 350ms ease;
+    transform: perspective(100vw) rotateY(-15deg);
+    -webkit-text-stroke: 5px black;    
+    color:transparent;
+    transform-origin: right;
+
+
+
+}
+
+* {
+    outline: 1px solid white;
+}

@@ -1,0 +1,30 @@
+body {
+    background-color: #4801ff;
+    color: black;
+    font-size: 128px;
+    font-family: sans-serif;
+}
+* {
+    outline: 1px solid white;
+}
+.panel-1 {
+    transform: perspective(100vw) rotateY(-30deg);
+    transform-origin: right;
+    text-align: right;
+    width: 100vw;
+    transition: transform 350ms ease;
+    font-weight: bolder;
+}
+.panel-1:hover {
+    transition: transform 350ms ease;
+    transform: perspective(100vw) rotateY(-15deg);
+    -webkit-text-stroke: 5px black;    
+    color:transparent;
+    transform-origin: right;
+
+
+
+}
+.content {
+    padding-right: 5vw;
+}

@@ -1,0 +1,62 @@
+body {
+  background-color: #4801ff;
+  color: black;
+  font-size: 128px;
+  font-family: sans-serif;
+  padding-right: 10vw;
+}
+
+.stage-perspective {
+  overflow-x: hidden;
+  -webkit-perspective: 300px;
+          perspective: 300px;
+}
+
+.stage-perspective .panel-1 {
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: perspective(100vw) rotateY(-30deg);
+          transform: perspective(100vw) rotateY(-30deg);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  text-align: right;
+  -webkit-transition: -webkit-transform 350ms ease;
+  transition: -webkit-transform 350ms ease;
+  transition: transform 350ms ease;
+  transition: transform 350ms ease, -webkit-transform 350ms ease;
+  font-weight: bolder;
+  height: 20vh;
+}
+
+.stage-perspective .panel-1 .content {
+  position: absolute;
+  inset: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.panel-1:hover {
+  -webkit-transition: -webkit-transform 350ms ease;
+  transition: -webkit-transform 350ms ease;
+  transition: transform 350ms ease;
+  transition: transform 350ms ease, -webkit-transform 350ms ease;
+  -webkit-transform: perspective(100vw) rotateY(-15deg);
+          transform: perspective(100vw) rotateY(-15deg);
+  -webkit-text-stroke: 5px black;
+  color: transparent;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+* {
+  outline: 1px solid white;
+}
+/*# sourceMappingURL=style.css.map */
