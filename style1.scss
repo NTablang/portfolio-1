@@ -256,7 +256,7 @@ span {
         width: 70vw;
         margin-bottom: 15vh;
 
-        #national-honor, #student-council, #math, #mc {
+        #national-honor, #student-council, #math, #fire, #mc {
             display: none;
             transition: display 500ms ease;
         }
@@ -264,8 +264,8 @@ span {
             display: flex;
             flex-direction: column;
             width: auto;
-            min-height:15vh;
-            max-height:15vh;
+            min-height:19vh;
+            max-height:19vh;
 
             margin-right: 2vw;
             font-size: 0.55em;

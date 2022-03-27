@@ -268,7 +268,7 @@ span {
   margin-bottom: 15vh;
 }
 
-.section #leadership-content #national-honor, .section #leadership-content #student-council, .section #leadership-content #math, .section #leadership-content #mc {
+.section #leadership-content #national-honor, .section #leadership-content #student-council, .section #leadership-content #math, .section #leadership-content #fire, .section #leadership-content #mc {
   display: none;
   -webkit-transition: display 500ms ease;
   transition: display 500ms ease;
@@ -283,8 +283,8 @@ span {
       -ms-flex-direction: column;
           flex-direction: column;
   width: auto;
-  min-height: 15vh;
-  max-height: 15vh;
+  min-height: 19vh;
+  max-height: 19vh;
   margin-right: 2vw;
   font-size: 0.55em;
   -webkit-box-pack: center;

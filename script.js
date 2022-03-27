@@ -57,6 +57,14 @@ selections.forEach((selection) => {
                     }
                     else post.style.display = "none";
                 }); break;
+            case "First-Year Innovation and Research Experience (FIRE)": 
+                posts.forEach(post => {
+                    console.log(post.id);
+                    if (post.id == "fire") {
+                        post.style.display = "inline";
+                    }
+                    else post.style.display = "none";
+                }); break;
             case "NHS": 
                 posts.forEach(post => {
                     console.log(post.id);
