@@ -248,6 +248,13 @@ colorToggle.addEventListener("click", () => {
         sites.forEach((site) => {
             site.classList.add("pic-violet-scheme");
         })
+        var link = document.querySelector("link[rel~='icon']");
+        if (!link) {
+            link = document.createElement('link');
+            link.rel = 'icon';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+        link.href = 'me1.png';
     }
     // if the current scheme is blue-magenta
     else {
@@ -262,6 +269,13 @@ colorToggle.addEventListener("click", () => {
         sites.forEach((site) => {
             site.classList.add("pic-orange-scheme");
         })
+        var link = document.querySelector("link[rel~='icon']");
+        if (!link) {
+            link = document.createElement('link');
+            link.rel = 'icon';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+        link.href = 'me2.png';
 
     }
     selections.forEach(selection => {
