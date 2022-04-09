@@ -67,24 +67,28 @@
   font-family: "Monument-Light";
   margin-top: 15vh;
   font-size: 0.3em;
-  line-height: 1.3em;
+  line-height: 1.6em;
 }
 
 .top-feed-content .preface {
-  font-size: 0.3em;
+  font-size: 0.4em;
   color: var(--text-color);
-  line-height: 1.2em;
+  line-height: 2.2em;
+  font-family: "Space Mono";
 }
 
 .top-feed-content .top-sub {
-  font-size: 0.6em;
+  font-size: 0.4em;
   line-height: 1.3em;
-  color: rgba(255, 255, 255, 0.548);
+  color: white;
 }
 
 .top-feed-content .top-sub .sub {
-  font-size: 0.45em;
+  font-size: 1em;
   line-height: 1.5em;
+  font-family: "Space Mono";
+  margin-top: 5vh;
+  color: rgba(255, 255, 255, 0.548);
 }
 
 .top-feed-content .subtitle {
@@ -682,6 +686,15 @@ span {
   color: var(--text-color);
 }
 
+::-webkit-scrollbar {
+  background: var(--bg-color);
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-color);
+}
+
 body {
   text-rendering: geometricPrecision;
   background-color: var(--bg-color);
@@ -689,6 +702,7 @@ body {
   font-size: 8em;
   line-height: 0.8em;
   color: var(--text-color);
+  scrollbar-color: var(--text-color) var(--text-color);
 }
 
 body .parallax_wrapper {
